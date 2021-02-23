@@ -1,6 +1,7 @@
 def solution(A, B, K):
     if K == 1:
         return B - A + 1
+
     start = 1
     if A % K == 0:
         if A >= K:
@@ -14,10 +15,7 @@ def solution(A, B, K):
             cnt = cnt + 1
             tmp = K * cnt
         start = cnt
-
     end = B//K
-    print(start*K, end*K)
-
     return end - start + 1
 
 
