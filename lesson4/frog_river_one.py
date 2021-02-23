@@ -3,12 +3,9 @@ def solution(X, A):
     for i in range(X):
         memo.append(1000000)
     for i in range(len(A)):
-        print(A[i])
         if memo[A[i]-1] > i:
             memo[A[i]-1] = i
-    print(memo)
     memo.sort()
-    print(memo)
     if memo[len(memo)-1] == 1000000:
         return -1
     return memo[len(memo)-1]
