@@ -48,7 +48,6 @@ def solution(S, P, Q):
             if 0 < prefix[Q[i]+1][j] - prefix[P[i]][j]:
                 result.append(j+1)
                 break
-
     return result
 
 
